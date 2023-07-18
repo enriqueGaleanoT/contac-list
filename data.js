@@ -1,30 +1,40 @@
 function driverProgram(){
-    let contactList = ["Enrique Galeano", "ADA School", "Cristobal Colon", "Elizabeth Marie"];
-    console.log("1. Lista original:"+ contactList);
+    // let contactList = ["Enrique Galeano", "ADA School", "Cristobal Colon", "Elizabeth Marie"];
+    // console.log("1. Lista original:"+ contactList);
 
-    let addContacts = "Carlos Jose" 
+    // let addContacts = "Carlos Jose" 
     
-    console.log("2. Lista con un contacto nuevo: ");
-    addContactToList(contactList, addContacts); 
+    // console.log("2. Lista con un contacto nuevo: ");
+    // addContactToList(contactList, addContacts); 
 
-    console.log("3. Elemento removido de la lista: ");
-    popContactFromList(contactList);
+    // console.log("3. Elemento removido de la lista: ");
+    // popContactFromList(contactList);
 
-    printArray(contactList);
+    // printArray(contactList);
+
+    let contactList = [
+        {
+
+        }
+    ]
 }
 
-function addContactToList(arrayContacts, contact){
-    arrayContacts.push(contact);
-    for (let i = 0; i < arrayContacts.length; i++) {
-        console.log(arrayContacts[i]);
+function addContactToList(ID, nombre, apellidos, telefono, ciudad, dirrecion){
+    let newContact = {
+        id: ID,
+        name: nombre,
+        surname: apellidos,
+        contact: telefono,
+        city: ciudad,
+        direction: dirrecion
     }
 }
 
 function popContactFromList(arrayContacts){
-    console.log("Elemento:" + arrayContacts.pop());
+    // console.log("Elemento:" + arrayContacts.pop());
 
 }
 
 function printArray(arrayContacts){
-    console.log("4. Lista Nueva: "+arrayContacts);
+    // console.log("4. Lista Nueva: "+arrayContacts);
 }
