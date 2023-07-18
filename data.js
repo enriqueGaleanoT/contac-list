@@ -28,6 +28,28 @@ function driverAdd(){
     addContactToList(1, "fer", "martinez", 54321, "san pedro sula", "colonia 15 de sept");
 }
 
+
+function popContactFromList(){
+    console.log("Se elimino el ultimo elemento de la lista");
+    console.log("Elemento:" + contactList.pop());
+}
+
+function modifyContact(){
+    for (const contacts of contactList) {
+        if(contacts.id == 0){
+            contacts.name = "Pro";
+            contacts.surname = "Talento";
+            contacts.contact = 12321312321;
+            contacts.city = "Colombia";
+            contacts.direction = "Bogota";
+        }
+    }
+
+    console.log("Modificacion");
+    console.log(contactList);
+}
+
+
 function driverShow(){
     console.log("Lista: ");
     for (let i = 0; i < contactList.length; i++) {
@@ -37,10 +59,3 @@ function driverShow(){
         console.log("La lista de contactos esta vacia");
     }
 }
-
-function popContactFromList(){
-    console.log("Se elimino el ultimo elemento de la lista");
-    console.log("Elemento:" + contactList.pop());
-}
-
-
